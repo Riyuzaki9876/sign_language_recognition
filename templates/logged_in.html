@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Logged in</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    </head>
+    <body style="background-image: url(static/bgm.png);">
+        <center>
+        <h1>CAMERA SECTION</h1>
+        <div id="camButtons">
+        <a href="{{url_for('cam1')}}">GESTUE DETECTION</a>
+        <a href="{{url_for('cam2')}}">TEXT TO SPEECH</a>
+        <a href="{{url_for('cam3')}}">EMOTION DETECTION</a>
+        <!-- </div>
+        <div id="camButtons"> -->
+        <a href="{{url_for('image')}}">IMAGE PREPROCESSING</a>
+        
+        </div>
+        <div id="logout">
+            <a href="{{url_for('login')}}">Logout</a>
+        </div>
+        </center>
+    </body>
+</html>
